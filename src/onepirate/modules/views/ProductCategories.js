@@ -89,56 +89,56 @@ function ProductCategories(props) {
   const images = [
     {
       url:
-        'https://images.unsplash.com/photo-1534081333815-ae5019106622?auto=format&fit=crop&w=400&q=80',
-      title: 'Snorkeling',
+        '/static/images/design-example/kitchen_1.jpg',
+      title: '封闭厨房',
       width: '40%',
     },
     {
       url:
-        'https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?auto=format&fit=crop&w=400&q=80',
-      title: 'Massage',
+        '/static/images/design-example/kitchen_2.jpg',
+      title: '简易厨房',
       width: '20%',
     },
     {
       url:
-        'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=400&q=80',
-      title: 'Hiking',
+        '/static/images/design-example/kitchen_3.jpg',
+      title: '开放式厨房',
       width: '40%',
     },
     {
       url:
-        'https://images.unsplash.com/photo-1453747063559-36695c8771bd?auto=format&fit=crop&w=400&q=80',
-      title: 'Tour',
+        '/static/images/design-example/kitchen_4.jpg',
+      title: '半开放厨房',
       width: '38%',
     },
     {
       url:
-        'https://images.unsplash.com/photo-1523309996740-d5315f9cc28b?auto=format&fit=crop&w=400&q=80',
-      title: 'Gastronomy',
+        '/static/images/design-example/living_room_1.jpg',
+      title: '客厅',
       width: '38%',
     },
     {
       url:
-        'https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?auto=format&fit=crop&w=400&q=80',
-      title: 'Shopping',
+        '/static/images/design-example/living_room_2.jpg',
+      title: '门厅',
       width: '24%',
     },
     {
       url:
-        'https://images.unsplash.com/photo-1506941433945-99a2aa4bd50a?auto=format&fit=crop&w=400&q=80',
-      title: 'Walking',
+        '/static/images/design-example/living_room_3.jpg',
+      title: '厨客一体',
       width: '40%',
     },
     {
       url:
-        'https://images.unsplash.com/photo-1533727937480-da3a97967e95?auto=format&fit=crop&w=400&q=80',
-      title: 'Fitness',
+        '/static/images/design-example/toilet_1.jpg',
+      title: '卫浴',
       width: '20%',
     },
     {
       url:
         'https://images.unsplash.com/photo-1518136247453-74e7b5265980?auto=format&fit=crop&w=400&q=80',
-      title: 'Reading',
+      title: '办公室',
       width: '40%',
     },
   ];
@@ -146,7 +146,7 @@ function ProductCategories(props) {
   return (
     <Container className={classes.root} component="section">
       <Typography variant="h4" marked="center" align="center" component="h2">
-        For all tastes and all desires
+        给您一个梦想中的家
       </Typography>
       <div className={classes.images}>
         {images.map((image) => (
