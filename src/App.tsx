@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Home from "./onepirate/Home";
+import {Redirect, Switch} from "react-router";
+import {MainRoutes} from "./routers";
+import RouteWithProps from "./components/RouteWithProps";
+import withRoot from "./onepirate/modules/withRoot";
+import GlobalContextProvider from "./store/Global.context";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <GlobalContextProvider>
+            <Switch>
+                {
+                    MainRoutes.map((route: any) => {
+                        return (
+                            <RouteWithProps layout={route.layout} component={route.component} key={route.path}
+                                            path={route.path}
+                                            exact={route.isExact}/>);
+                    })
+                }
+                <Redirect to="/home" from="/" exact/>
+                <Redirect to="/not-found"/>
+            </Switch>
+        </GlobalContextProvider>
+    );
 }
 
-export default App;
+export default withRoot(App)
