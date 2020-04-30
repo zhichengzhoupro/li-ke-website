@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import Home from "./onepirate/Home";
-import {Redirect, Switch} from "react-router";
+import {Redirect, Switch} from "react-router-dom";
 import {MainRoutes} from "./routers";
 import RouteWithProps from "./components/RouteWithProps";
 import withRoot from "./onepirate/modules/withRoot";

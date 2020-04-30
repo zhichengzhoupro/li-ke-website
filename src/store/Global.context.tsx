@@ -19,4 +19,4 @@ const GlobalContextProvider = (props: any) => {
     );
 };
 
-export default withRouter(GlobalContextProvider)
+export default GlobalContextProvider

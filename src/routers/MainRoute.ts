@@ -1,23 +1,29 @@
 
 import NotFound from "../views/not-found";
 import Home from "../views/home";
+import Desgin from "../views/design";
+import Route from "./Route";
+import MainLayout from "../components/Layout";
 
-interface Route {
-    path: string,
-    component: any,
-    isExact: boolean
-}
 
-export const MainRoutes: Route[] = [
+const MainRoutes: Route[] = [
     {
         path:'/home',
         component: Home,
         isExact: true,
+        layout: MainLayout
+    },
+    {
+        path:'/design',
+        component: Desgin,
+        isExact: false,
+        layout: MainLayout
     },
     {
         path:'/not-found',
         component: NotFound,
         isExact: true,
+        layout: MainLayout
     }
 ];
 
