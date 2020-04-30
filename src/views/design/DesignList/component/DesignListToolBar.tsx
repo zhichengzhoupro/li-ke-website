@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/styles';
-import { Button } from '@material-ui/core';
+import {makeStyles} from '@material-ui/styles';
 
-import { SearchInput } from '../../../../components';
+import {SearchInput} from '../../../../components';
 import {observer} from "mobx-react";
 
 const useStyles = makeStyles((theme:any) => ({

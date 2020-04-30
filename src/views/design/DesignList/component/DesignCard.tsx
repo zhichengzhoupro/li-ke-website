@@ -1,17 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/styles';
-import {
-    Card,
-    CardContent,
-    CardActions,
-    Typography,
-    Grid,
-    Divider, CardActionArea, CardMedia
-} from '@material-ui/core';
-import AccessTimeIcon from '@material-ui/icons/AccessTime';
-import GetAppIcon from '@material-ui/icons/GetApp';
+import {makeStyles} from '@material-ui/styles';
+import {Card, CardActionArea, CardContent, CardMedia, Typography} from '@material-ui/core';
 import {observer} from "mobx-react";
 
 const useStyles = makeStyles((theme:any) => ({

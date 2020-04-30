@@ -1,5 +1,4 @@
 import React, {createContext} from "react";
-import {withRouter} from "react-router";
 import UserStore from "./User.store";
 import {UserService} from "../services";
 
