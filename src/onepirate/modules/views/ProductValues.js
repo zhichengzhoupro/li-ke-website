@@ -54,7 +54,7 @@ function ProductValues(props) {
           className={classes.curvyLines}
           alt="curvy lines"
         />
-        <Grid container spacing={12}>
+        <Grid container spacing={8}>
           <Grid item xs={12} md={4} style={{marginLeft:'-180px', marginTop: '-118px'}}>
             <div className={classes.item}>
               <Avatar src={'/static/images/avatar/1.jpg'} className={classes.avatarLarge} variant={'circle'}/>

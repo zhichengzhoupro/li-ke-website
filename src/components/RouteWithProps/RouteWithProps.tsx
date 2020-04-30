@@ -8,7 +8,6 @@ const RouteWithProps = (props: any) => {
         <Route
             {...rest}
             render={(matchProps) => {
-                console.log(Layout);
                 return (
                     <>
                         {
