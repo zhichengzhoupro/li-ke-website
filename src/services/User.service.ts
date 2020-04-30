@@ -39,7 +39,7 @@ export default class UserService extends BaseHttpService {
     }
 
     async signout() {
-        const result: any = await this.get('user/signout');
+        //const result: any = await this.get('user/signout');
     }
 
 
