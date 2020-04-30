@@ -50,7 +50,7 @@ function AppAppBar(props) {
             className={classes.title}
             href="/premium-themes/onepirate/"
           >
-            {'力科工作室'}
+            {'立科工作室'}
           </Link>
           <div className={classes.right}>
             <Link
