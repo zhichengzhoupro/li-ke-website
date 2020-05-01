@@ -42,7 +42,9 @@ function AppAppBar(props) {
     <div>
       <AppBar position="fixed">
         <Toolbar className={classes.toolbar}>
-          <div className={classes.left} />
+          <div className={classes.left} >
+            <img  href={'/'}/>
+          </div>
           <Link
             variant="h6"
             underline="none"
