@@ -20,7 +20,7 @@ const styles = (theme) => ({
     width: 5
   },
   logo: {
-    height: 100
+    height: 250
   },
   leftLinkActive: {
     color: theme.palette.common.white,
