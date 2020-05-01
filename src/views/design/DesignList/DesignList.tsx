@@ -1,8 +1,6 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/styles';
-import {Container, Grid, IconButton, Typography} from '@material-ui/core';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import {Container, Grid} from '@material-ui/core';
 import DesignListToolBar from "./component/DesignListToolBar";
 import DesignCard from "./component/DesignCard";
 import {useStores} from "../../../store/use-stores";
