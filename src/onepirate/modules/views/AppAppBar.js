@@ -16,6 +16,11 @@ const styles = (theme) => ({
   },
   left: {
     flex: 1,
+    height: 10,
+    width: 5
+  },
+  logo: {
+    height: 10
   },
   leftLinkActive: {
     color: theme.palette.common.white,
@@ -43,7 +48,7 @@ function AppAppBar(props) {
       <AppBar position="fixed">
         <Toolbar className={classes.toolbar}>
           <div className={classes.left} >
-            <img  href={'/'}/>
+            <img  src={'/static/images/logo/logo.png'} alt={'logo'} className={classes.logo}/>
           </div>
           <Link
             variant="h6"
