@@ -5,6 +5,7 @@ import {makeStyles} from '@material-ui/styles';
 
 import {SearchInput} from '../../../../components';
 import {observer} from "mobx-react";
+import {useStores} from "../../../../store/use-stores";
 
 const useStyles = makeStyles((theme:any) => ({
     root: {},
@@ -33,6 +34,12 @@ const DesignListToolBar = (props: any) => {
 
     const classes = useStyles();
 
+    const {DesignStore} = useStores();
+
+    const onChange = (e: any) => {
+        DesignStore.searchInDesignList(e.target.value);
+
+    }
     return (
         <div
             {...rest}
@@ -46,7 +53,7 @@ const DesignListToolBar = (props: any) => {
             <div className={classes.row}>
                 <SearchInput
                     className={classes.searchInput}
-
+                    onChange={onChange}
                 />
             </div>
         </div>

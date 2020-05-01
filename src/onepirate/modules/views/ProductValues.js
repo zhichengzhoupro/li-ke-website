@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
+import { useHistory } from "react-router-dom";
 
 const styles = (theme) => ({
   root: {
@@ -23,6 +24,10 @@ const styles = (theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
     padding: theme.spacing(0, 5),
+    cursor: 'pointer',
+    "&:hover": {
+      background: "#efefef"
+    },
   },
   image: {
     height: 55,
@@ -46,6 +51,12 @@ const styles = (theme) => ({
 function ProductValues(props) {
   const { classes } = props;
 
+  const history = useHistory();
+
+  const GoToDesignPage = () => {
+    history.push("/design/list");
+  };
+
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
@@ -59,7 +70,7 @@ function ProductValues(props) {
             <div className={classes.item}>
               <Avatar src={'/static/images/avatar/1.jpg'} className={classes.avatarLarge} variant={'circle'}/>
               <Typography variant="h6" className={classes.title}>
-                王力科
+                王立科
               </Typography>
               <Typography variant="h5">
                 {'From the latest trendy boutique hotel to the iconic palace with XXL pool'}
@@ -68,14 +79,14 @@ function ProductValues(props) {
             </div>
           </Grid>
           <Grid item xs={12} md={3}>
-            <div className={classes.item}>
+            <div className={classes.item} onClick={GoToDesignPage}>
               <img
                 className={classes.image}
                 src="/static/themes/onepirate/productValues1.svg"
                 alt="suitcase"
               />
               <Typography variant="h6" className={classes.title}>
-                设计
+                室内设计
               </Typography>
               <Typography variant="h5">
                 {'From the latest trendy boutique hotel to the iconic palace with XXL pool'}
@@ -91,7 +102,7 @@ function ProductValues(props) {
                 alt="graph"
               />
               <Typography variant="h6" className={classes.title}>
-                施工
+                施工监理
               </Typography>
               <Typography variant="h5">
                 {'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '}
@@ -107,7 +118,7 @@ function ProductValues(props) {
                 alt="clock"
               />
               <Typography variant="h6" className={classes.title}>
-                建材
+                建材销售
               </Typography>
               <Typography variant="h5">
                 {'By registering, you will access specially negotiated rates '}

@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import {makeStyles} from '@material-ui/styles';
 import {Card, CardActionArea, CardContent, CardMedia, Typography} from '@material-ui/core';
 import {observer} from "mobx-react";
+import {useHistory} from "react-router";
 
 const useStyles = makeStyles((theme:any) => ({
     root: {},
@@ -39,12 +40,18 @@ const ProductCard = (props: any) => {
 
     const classes = useStyles();
 
+    const history = useHistory();
+
+    const goToDesignDetailPage = () => {
+        history.push(`/design/detail/${product.id}`);
+    }
+
     return (
         <Card
             {...rest}
             className={clsx(classes.root, className)}
         >
-            <CardActionArea>
+            <CardActionArea onClick={(e) => goToDesignDetailPage()}>
                 <CardMedia
                     className={classes.media}
                     image={product.imageUrl}
