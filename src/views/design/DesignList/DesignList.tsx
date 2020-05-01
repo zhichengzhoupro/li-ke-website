@@ -9,9 +9,6 @@ import {useStores} from "../../../store/use-stores";
 import {observer} from "mobx-react";
 
 const useStyles = makeStyles((theme: any) => ({
-    container: {
-        marginLeft: '17%'
-    },
     root: {
         padding: theme.spacing(3)
     },
@@ -32,7 +29,7 @@ const DesginList = () => {
     const {DesignStore} = useStores();
 
     return (
-        <Container className={classes.container}>
+        <Container>
             <div className={classes.root}>
                 <DesignListToolBar/>
                 <div className={classes.content}>
