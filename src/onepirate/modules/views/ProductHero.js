@@ -36,7 +36,7 @@ function ProductHero(props) {
       {/* Increase the network loading priority of the background image. */}
       <img style={{ display: 'none' }} src={backgroundImage} alt="increase priority" />
       <Typography color="inherit" align="center" variant="h2" marked="center">
-        更新你的家
+        更新你自己的家
       </Typography>
       <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
        让您拥有一个完美的家 绝对放心的用户体验
